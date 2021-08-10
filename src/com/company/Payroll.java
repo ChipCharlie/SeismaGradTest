@@ -9,7 +9,7 @@ public class Payroll {
     private String lastName;
     private int annualSalary;
     private String superRate;
-    private String dateStart;
+    private int dateStart;
     /* *
     * @param firstName
     * @param lastName
@@ -18,7 +18,7 @@ public class Payroll {
     * @param dateStart
     * */
     public Payroll(String firstName, String lastName, int annualSalary,
-                   String superRate, String dateStart){
+                   String superRate, int dateStart){
         super();
         this.firstName = firstName;
         this.lastName = lastName;
@@ -57,11 +57,11 @@ public class Payroll {
         this.superRate = superRate;
     }
     /* @return the dateStart */
-    public String getDateStart(){
+    public int getDateStart(){
         return dateStart;
     }
     /* @param dateStart the dateStart to set*/
-    public void setDateStart(String dateStart){
+    public void setDateStart(int dateStart){
         this.dateStart = dateStart;
     }
 
