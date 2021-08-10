@@ -6,7 +6,7 @@ package com.company;
 public class Payslip {
 
     private String fullName;
-    private String payPeriod;
+    private int payPeriod;
     private int grossIncome;
     private int incomeTax;
     private int netIncome;
@@ -20,7 +20,7 @@ public class Payslip {
      * @param netIncome
      * @param superPaid
      * */
-    public Payslip(String fullName, String payPeriod, int grossIncome,
+    public Payslip(String fullName, int payPeriod, int grossIncome,
                    int incomeTax, int netIncome, int superPaid){
         super();
         this.fullName = fullName;
@@ -40,11 +40,11 @@ public class Payslip {
         this.fullName = fullName;
     }
     /* @return the payPeriod */
-    public String getPayPeriod(){
+    public int getPayPeriod(){
         return payPeriod;
     }
     /* @param payPeriod the payPeriod to set*/
-    public void setPayPeriod(String payPeriod){
+    public void setPayPeriod(int payPeriod){
         this.payPeriod = payPeriod;
     }
     /* @return the grossIncome */
